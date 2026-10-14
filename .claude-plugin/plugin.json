@@ -1,0 +1,29 @@
+{
+  "name": "pin-it",
+  "version": "0.1.0",
+  "description": "Pin Claude replies to a side pane so they stay in view",
+  "license": "MIT",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "keep": {
+      "type": "string",
+      "title": "Pin it: keep pins",
+      "description": "How long saved pins are kept. \"7 days\" clears each pin a week after it was pinned; \"forever\" keeps pins until you unpin them.",
+      "default": "7 days",
+      "options": [
+        "7 days",
+        "forever"
+      ]
+    },
+    "sync": {
+      "type": "string",
+      "title": "Pin it: sync pins",
+      "description": "How an open session picks up pins another session saved in the same project. \"on activity\" checks when you send a prompt, when Claude finishes, and when you open the pane with /pins; \"every 5 seconds\" also checks on a timer.",
+      "default": "on activity",
+      "options": [
+        "on activity",
+        "every 5 seconds"
+      ]
+    }
+  }
+}

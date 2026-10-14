@@ -1,0 +1,5 @@
+{
+  "name": "pin-it",
+  "owner": { "name": "notyourcpa" },
+  "plugins": [{ "name": "pin-it", "source": "./" }]
+}
